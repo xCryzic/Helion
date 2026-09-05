@@ -1,0 +1,29 @@
+{
+  "name": "helion-2027",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:client": "vite --configLoader runner",
+    "dev:server": "tsc -p tsconfig.server.json && node --env-file-if-exists=.env --watch server-dist/server/index.js",
+    "build": "tsc -b && vite build --configLoader runner",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit --pretty false && tsc -p tsconfig.node.json --noEmit --pretty false && tsc -p tsconfig.server.json --noEmit --pretty false",
+    "preview": "vite preview",
+    "start": "node --env-file-if-exists=.env server-dist/server/index.js",
+    "admin:hash": "node scripts/hash-admin-password.mjs",
+    "test:integration": "node scripts/integration-test.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@types/node": "^24.3.0",
+    "@vitejs/plugin-react": "^5.0.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  }
+}

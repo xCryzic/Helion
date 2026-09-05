@@ -1,0 +1,40 @@
+:root {
+  --color-ink: #0a0a09;
+  --color-ink-raised: #11110f;
+  --color-paper: #f0eee7;
+  --color-paper-bright: #faf8f2;
+  --color-muted-dark: #a6a49c;
+  --color-muted-light: #68675f;
+  --color-line-dark: rgb(255 255 255 / 14%);
+  --color-line-light: rgb(10 10 9 / 18%);
+  --color-accent-start: #ffbf59;
+  --color-accent-mid: #ff7a3d;
+  --color-accent-end: #ff3838;
+  --gradient-brand: linear-gradient(
+    180deg,
+    var(--color-accent-start),
+    var(--color-accent-mid) 52%,
+    var(--color-accent-end)
+  );
+
+  --font-display: 'Space Grotesk', 'Arial Narrow', sans-serif;
+  --font-body: 'Manrope', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  --container-width: 92rem;
+  --gutter: clamp(1.25rem, 4vw, 4.5rem);
+  --header-height: 4.75rem;
+  --transition-fast: 180ms cubic-bezier(0.2, 0.75, 0.2, 1);
+  --transition-base: 420ms cubic-bezier(0.2, 0.75, 0.2, 1);
+}
